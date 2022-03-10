@@ -6,7 +6,7 @@ import { BsBell } from "react-icons/bs"
 
 function Cmp() {
     return (
-        <div className=" bg-zinc-600 flex justify-evenly w-4/6 ">
+        <div className=" bg-zinc-800 flex justify-evenly w-4/6 ">
             <Search />
             <IconGrids />
         </div>
