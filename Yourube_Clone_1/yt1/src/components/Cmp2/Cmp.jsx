@@ -5,7 +5,7 @@ function Cmp() {
     const [select, setSelect] = React.useState(1)
     return (
         <>
-            <div className="w-4/6 h-10 bg-zinc-800 flex overflow-x-scroll overflow-y-hidden ">
+            <div className="w-auto h-10 bg-zinc-800 flex overflow-x-scroll overflow-y-hidden ">
                 {
                     RecoMends.map(i => {
                         return (
@@ -25,7 +25,7 @@ const ScrollRecoMends = ({ unique, data, getId, uid }) => {
     if (unique) {
         classList = "bg-white whitespace-nowrap text-black rounded-full hover:cursor-pointer text-sm flex items-center mx-4 px-4 my-1"
     } else {
-        classList = "bg-zinc-600 whitespace-nowrap text-white rounded-full hover:cursor-pointer text-sm flex items-center mx-4 px-4 my-1"
+        classList = "bg-zinc-600 hover:bg-zinc-500 whitespace-nowrap text-white rounded-full hover:cursor-pointer text-sm flex items-center mx-4 px-4 my-1"
     }
     return (
         <div ref={refer} onClick={() => getId(uid)} className={classList}>{data}</div>
@@ -33,4 +33,4 @@ const ScrollRecoMends = ({ unique, data, getId, uid }) => {
 }
 
 
-export default Cmp
+export default Cmp;
